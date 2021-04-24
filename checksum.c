@@ -43,7 +43,7 @@ word16 checksum(byte *addr, word32 count){
   }
   
   if (count > 0)
-    sum = sum + *((byte *) addr);
+    sum = sum + *((byte *) waddr);
   
   while (sum >> 16)
     sum = (sum & 0xFFFF) + (sum >> 16);
